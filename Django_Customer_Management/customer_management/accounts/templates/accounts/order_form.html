@@ -1,0 +1,19 @@
+{% extends 'accounts/main.html' %}
+
+{% load static %}
+{% block content %}
+
+<form action="" method="POST">
+    <input type="submit" name="Submit">
+    <!-- first step is to setup CSRF tokens, to send data securly -->
+    {% csrf_token%}
+    <hr>
+    {%for form in formset%}
+    {{formset.management_form}}
+    {{form}}
+    <hr>
+    {%endfor%}
+
+</form>
+
+{% endblock %}

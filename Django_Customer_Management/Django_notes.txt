@@ -1,0 +1,8 @@
+- Django queryset is dictionary returned when we query DB.objects
+
+- set.all() is almost equal to filter()
+
+- order_by("id")    -> ordering by id
+- order_by("-id")   -> ordering by id in reverse
+
+- {%%} or {{}}             -> templates tags
